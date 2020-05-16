@@ -1,0 +1,23 @@
+Open a git bash terminal to add dependencies. 
+
+Install the Bit and Web3 Python libraries inside your working environment:
+
+    1. pip install bit 
+    2. pip install Web3
+
+Clone hd-wallet-derive inside of your wallet directory. 
+Note: You must be running git bash as administrator to use ./derive
+For windows machines only, run the following command before proceedeing
+    export MSYS=winsymlinks:nativestrict
+Follow the instructions from the offical documentation
+    1. git clone https://github.com/dan-da/hd-wallet-derive
+    2. cd hd-wallet-derive
+    3. php -r "readfile('https://getcomposer.org/installer');" | php
+    4. php composer.phar install
+After the installation is complete cd back to parent directory of hd-wallet-derive then: 
+    1. create the symlink: ln -s hd-wallet-derive/hd-wallet-derive.php derive
+    2. test that symlink is working: ./derive -g --mnemonic=“Your mnemonic phrase” --cols=path,address,privkey,pubkey
+    3. Test with a coin: ./derive -g --mnemonic=“Your mnemonic phrase” --cols=path,address,privkey,pubkey --coin="coin_name"
+
+
+
