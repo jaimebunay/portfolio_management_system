@@ -74,7 +74,7 @@ def send_tx(coin, account, recipient, amount):
 ## Sending Testnet transaction
 Use a new terminal window and cd to your `wallet`. Run the `Python` shell and execute the following command `from wallet import *`. Now all functions from `wallet.py` are 
 ### Bitcoin Testnet 
-1. Using one of derived addresses for BTCTEST, request test bitcoin from (this tesnet faucet)[https://coinfaucet.eu/en/btc-testnet/] to fund the wallet.
+1. Using one of derived addresses for BTCTEST, request test bitcoin from [this tesnet faucet](https://coinfaucet.eu/en/btc-testnet/) to fund the wallet.
 2. Use the functions to set, create, sign, and send a transaction to another testnet address. 
 ###### Confirmation of the transaction on [blockcypher](https://www.blockcypher.com/)
 ![btctest_transaction](screenshots/btctest_transaction.png)
